@@ -184,7 +184,7 @@ el/
 
 ### 1. Training Phase
 - **Environment**: Synthetic queue simulation
-- **Episodes**: 300 training episodes
+- **Episodes**: 500 training episodes
 - **Exploration**: ε-greedy (ε: 1.0 → 0.01)
 - **Experience Replay**: 10,000 transitions
 - **Target Network**: Updated every 10 episodes
