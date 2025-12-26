@@ -1,0 +1,56 @@
+﻿
+======================================================================
+ DIRECT TRACE COMPARISON - Single Run, No Jitter
+======================================================================
+
+[LOAD] Loading: ..\queue_data.csv
+[OK] Loaded 560 customer records from March 30th
+
+----------------------------------------------------------------------
+[1] REAL WORLD PERFORMANCE (Historical Data)
+----------------------------------------------------------------------
+   Avg Wait Time:     10.11 minutes
+   Customers Served:  560
+   Avg Tellers:       8.00 (estimated)
+   Renege Rate:       5.00% (estimated)
+   Total Cost:        $500.54 (estimated)
+
+----------------------------------------------------------------------
+[2] SIMPLE RULES BASELINE (if queue > 10, add teller)
+----------------------------------------------------------------------
+   Avg Wait Time:     8.67 minutes
+   Customers Served:  153
+   Avg Tellers:       2.42
+   Renege Rate:       72.68%
+   Total Cost:        $891.19
+
+----------------------------------------------------------------------
+[3] RL AGENT (Your AI Model)
+----------------------------------------------------------------------
+   [WARNING] RL integration requires running through validation_framework.py
+   [INFO] For now, showing baseline comparison only
+
+======================================================================
+ COMPARISON SUMMARY
+======================================================================
+
+             Metric    Real World Simple Rules
+Avg Wait Time (min)         10.11         8.67
+   Avg Tellers Used    8.00 (est)         2.42
+   Customers Served           560          153
+    Renege Rate (%)   5.00% (est)       72.68%
+ Estimated Cost ($) $500.54 (est)      $891.19
+
+======================================================================
+[OK] Results saved to: results\direct_comparison.csv
+======================================================================
+
+[INSIGHTS] KEY INSIGHTS:
+   ò Real world had 10.1 min average wait
+   ò Simple rules achieved 8.7 min wait with 2.4 tellers
+   ò Simple rules improved wait time by 14.2%
+   ò Both served all 560 customers
+
+[NOTE] For RL comparison, check the dashboard Results Viewer tab
+   (Run validation with Real-World Trace mode)
+
